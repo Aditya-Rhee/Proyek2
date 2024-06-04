@@ -28,6 +28,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Garis biru -->
     <div class="container mt-2">
     <div class="row">
@@ -37,6 +38,11 @@
     </div>
     </div>
 
+=======
+    <!-- Row baru untuk garis putih kecil -->
+    <hr class="w-full" style="border: 50px solid rgb(0, 92, 116);">
+    
+>>>>>>> 29f94bc3034151ada0c15fcacfff200a18408e84
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-12 d-flex align-items-center justify-content-center">

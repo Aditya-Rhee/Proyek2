@@ -17,7 +17,15 @@ class PageController extends Controller
     public function contact(){
         return view('contact');
     }
+<<<<<<< HEAD
     public function pesan(){
         return view('pesan');
+=======
+    public function sk(){
+        return view('sk');
+    }
+    public function service(){
+        return view('service');
+>>>>>>> 29f94bc3034151ada0c15fcacfff200a18408e84
     }
 }

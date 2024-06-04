@@ -8,9 +8,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Layanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Kontak</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,10 +19,10 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Log in</a></li>
                         <li><a class="dropdown-item" href="#">Register</a></li>
-                        <li>
+                        {{-- <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">m</a></li>
+                        <li><a class="dropdown-item" href="#">m</a></li> --}}
                     </ul>
                 </li>
             </ul>
