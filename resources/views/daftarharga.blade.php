@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        Service
+        Daftar Harga
     </div>
 @endsection

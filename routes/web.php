@@ -16,8 +16,10 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/About', 'about')->name('about');
     Route::get('/Contact', 'contact')->name('contact');
-    Route::get('/Syarat&Ketentuan', 'sk')->name('sk');
+    Route::get('/Syarat&Ketentuan', 'syaratketentuan')->name('syaratketentuan');
     Route::get('/Service', 'service')->name('service');
     Route::get('/Pesan', 'pesan')->name('pesan');
+    Route::get('/AntarJemput', 'antarjemput')->name('antarjemput');
+    Route::get('/DaftarHarga', 'daftarharga')->name('daftarharga');
 });
 

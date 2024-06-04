@@ -21,10 +21,13 @@ class PageController extends Controller
     public function pesan(){
         return view('pesan');
     }
-    public function sk(){
-        return view('sk');
+    public function syaratketentuan(){
+        return view('syaratketentuan');
     }
-    public function service(){
-        return view('service');
+    public function antarjemput(){
+        return view('antarjemput');
+    }
+    public function daftarharga(){
+        return view('daftarharga');
     }
 }

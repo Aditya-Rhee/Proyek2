@@ -9,7 +9,17 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Layanan</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Layanan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('antarjemput') }}">Laundry Antar Jemput</a></li>
+                        <li><a class="dropdown-item" href="{{ route('daftarharga') }}">Daftar Harga</a></li>
+                    </ul>
+                    {{-- <a class="nav-link" href="{{ route('service') }}">Layanan</a> --}}
+                </li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Kontak</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
