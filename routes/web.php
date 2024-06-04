@@ -16,5 +16,6 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/about', 'about')->name('about');
     Route::get('/contact', 'contact')->name('contact');
+    Route::get('/pesan', 'pesan')->name('pesan');
 });
 
