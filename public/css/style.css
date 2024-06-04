@@ -11,6 +11,34 @@ body {
     background-color: #ABD6D2;
 }
 
+.bg-blue {
+    background-color: #6a9793;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.montserrat {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.text-merah {
+    color: #E27A7A;
+}
+
+.text-biru {
+    color: #33858A;
+}
+    
+
+.box {
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-brand {
     color: #fff;
     font-size: 35px;
@@ -28,6 +56,9 @@ body {
     text-decoration: underline;
 }
 
+.btn-merah {
+    background-color: red;
+}
 /* Footer */
 .footer{
     display: flex;
