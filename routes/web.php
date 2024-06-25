@@ -21,5 +21,6 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/Pesan', 'pesan')->name('pesan');
     Route::get('/AntarJemput', 'antarjemput')->name('antarjemput');
     Route::get('/DaftarHarga', 'daftarharga')->name('daftarharga');
+    Route::get('/PaketLainnya', 'paketlainnya')->name('paketlainnya');
 });
 

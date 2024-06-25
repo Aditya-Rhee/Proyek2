@@ -30,4 +30,7 @@ class PageController extends Controller
     public function daftarharga(){
         return view('daftarharga');
     }
+    public function paketlainnya(){
+        return view('paketlainnya');
+    }
 }
