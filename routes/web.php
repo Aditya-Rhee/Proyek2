@@ -32,7 +32,7 @@ Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/register', function () {
-    return view('register');
+    return view('auth/register');
 });
 
 Route::post('/register', 'Auth\RegisterController@register');
