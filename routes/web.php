@@ -1,5 +1,7 @@
 <?php
-use  App\Http\Controllers\PageController;
+
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/About', 'about')->name('about');
@@ -22,5 +25,14 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/AntarJemput', 'antarjemput')->name('antarjemput');
     Route::get('/DaftarHarga', 'daftarharga')->name('daftarharga');
     Route::get('/PaketLainnya', 'paketlainnya')->name('paketlainnya');
+    Route::get('/home', 'home')->name('home');
 });
 
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+
+// Route::get('/home', function () {
+//     return view('home');
+// });
+// Route::get('/register', [RegisterController::class, 'showRegisterForm'])->name('register');
+// Route::post('/register', [RegisterController::class, 'register']);
