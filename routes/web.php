@@ -31,6 +31,12 @@ Route::controller(PageController::class)->group(function () {
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::post('/register', 'Auth\RegisterController@register');
+
 // Route::get('/home', function () {
 //     return view('home');
 // });
