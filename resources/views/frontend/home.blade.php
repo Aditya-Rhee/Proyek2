@@ -14,7 +14,7 @@
                             Website laundryen juga menyediakan antar jemput pesanan
                     </div>
                     <div class="d-grid gap-3 col-6 mx-auto mt-3">
-                        <a href="{{ route('pesan') }}" class="btn btn-outline-primary btn-lg">Pesan Disini</a>
+                        <a href="{{ route('frontend/pesan') }}" class="btn btn-outline-primary btn-lg">Pesan Disini</a>
                         <button class="btn btn-outline-primary btn-lg" type="button">Lihat Antrian</button>
                         <br>
                     </div>

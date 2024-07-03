@@ -8,29 +8,29 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('home');
+        return view('frontend.home');
     }
     public function about(){
-        return view('about');
+        return view('frontend.about');
     }
 
     public function contact(){
-        return view('contact');
+        return view('frontend.contact');
     }
 
     public function pesan(){
-        return view('pesan');
+        return view('frontend.pesan');
     }
     public function syaratketentuan(){
-        return view('syaratketentuan');
+        return view('frontend.syaratketentuan');
     }
     public function antarjemput(){
-        return view('antarjemput');
+        return view('frontend.antarjemput');
     }
     public function daftarharga(){
-        return view('daftarharga');
+        return view('frontend.daftarharga');
     }
     public function paketlainnya(){
-        return view('paketlainnya');
+        return view('frontend.paketlainnya');
     }
 }

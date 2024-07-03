@@ -21,11 +21,11 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/Contact', 'contact')->name('contact');
     Route::get('/Syarat&Ketentuan', 'syaratketentuan')->name('syaratketentuan');
     Route::get('/Service', 'service')->name('service');
-    Route::get('/Pesan', 'pesan')->name('pesan');
+    Route::get('/Pesan', 'pesan')->name('frontend/pesan');
     Route::get('/AntarJemput', 'antarjemput')->name('antarjemput');
     Route::get('/DaftarHarga', 'daftarharga')->name('daftarharga');
     Route::get('/PaketLainnya', 'paketlainnya')->name('paketlainnya');
-    Route::get('/home', 'home')->name('home');
+    Route::get('/home', 'home')->name('frontend/home');
 });
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');

@@ -12,7 +12,7 @@
                     <h4 class="text-bold">PAKET <br> SETRIKA</h4>
                     <h6 class="text-merah">SETRIKA DENGAN <br> PELICIN PAKAIAN</h6>
                     <h6 class="text-biru">Rp 4.000/KG</h6>
-                    <button class="btn btn-primary" style="width: 130px" >Pesan</button> 
+                    <button class="btn btn-primary" style="width: 130px" >Pesan</button>
                 </span>
                 <div style="max-width: 120px; height: 120px;">
                     <img src="{{ asset('images/box1.png') }}" class="img-fluid">
@@ -25,7 +25,7 @@
                     <h4 class="text-bold">PAKET <br> CUCI KERING</h4>
                     <h6 class="text-merah">CUCI DAN JEMUR <br> SAMPAI KERING</h6>
                     <h6 class="text-biru">Rp 4.000/KG</h6>
-                    <button class="btn btn-primary" style="width: 130px" >Pesan</button> 
+                    <button class="btn btn-primary" style="width: 130px" >Pesan</button>
                 </span>
                 <div style="max-width: 120px; height: 120px;">
                     <img src="{{ asset('images/box2.png') }}" class="img-fluid">
@@ -38,7 +38,7 @@
                     <h4 class="text-bold">PAKET <br> CUCI & SETRIKA</h4>
                     <h6 class="text-merah">PAKET KOMPLIT <br> CUCI DAN SETRIKA</h6>
                     <h6 class="text-biru">Rp 6.000/KG</h6>
-                    <button class="btn btn-primary" style="width: 130px" >Pesan</button> 
+                    <button class="btn btn-primary" style="width: 130px" >Pesan</button>
                 </span>
                 <div style="max-width: 120px; height: 120px;">
                     <img src="{{ asset('images/box3.png') }}" class="img-fluid">
