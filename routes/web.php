@@ -40,9 +40,13 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout-process')
 // Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 // Route::post('/login', [LoginController::class, 'login']);
 
-// Route::get('/register', function () {
-//     return view('auth/register');
-// });
+Route::get('/register', function () {
+    return view('auth/register');
+});
+
+Route::get('/dashboard', function () {
+    return view('admin.layout.main');
+})->name('dashboard');
 
 
 // Route::post('/register', 'Auth\RegisterController@register');

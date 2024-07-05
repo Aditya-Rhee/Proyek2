@@ -5,25 +5,30 @@
         <div class="card-body">
             <p class="text-center fs-3 fw-bold">BUAT AKUN</p>
             <div>
-                <form action="" class="">
+                <form action="#" method="POST">
+                    @csrf
                     <div class="mb-3">
-                        <Input type="text" class="form-control" placeholder="Nomor Ponsel Atau Buat Username" />
+                        <input type="text" name="username" class="form-control" placeholder="Nomor Ponsel Atau Buat Username" required />
                     </div>
                     <div class="mb-3">
-                        <Input type="password" class="form-control" placeholder="Buat Password" />
+                        <input type="password" name="password" class="form-control" placeholder="Buat Password" required />
                     </div>
                     <div class="mb-3">
-                        <Input type="text" class="form-control" placeholder="Konfirmasi Password" />
+                        <input type="password" name="password_confirmation" class="form-control" placeholder="Konfirmasi Password" required />
                     </div>
                     <div class="mb-3">
-                        <Input type="text" class="form-control" placeholder="Masukan Email" />
+                        <input type="email" name="email" class="form-control" placeholder="Masukan Email" required />
                     </div>
                     <div>
-                        <button class="btn btn-primary w-100">Buat Akun</button>
+                        <button type="submit" class="btn btn-primary w-100 mb-2">Buat Akun</button>
+                    </div>
+                    <div>
+                        <a href="{{ route('login') }}" class="btn btn-secondary w-100">Kembali ke Login</a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
 @endsection

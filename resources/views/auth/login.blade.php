@@ -5,12 +5,15 @@
         <div class="card-body">
             <p class="text-center fs-3 fw-bold">LOGIN</p>
             <div>
-                <form method="POST" action="{{ route('login') }}" class="">
+                <form method="POST" action="{{ route('login-process') }}" class="need-validation" novalidate="">
                     @csrf
+                    <!-- Email Address -->
                     <div class="mb-3 input-group">
                         <span class="input-group-text"><i class="bi bi-people"></i></span>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Username" required />
                     </div>
+
+                    <!-- Password -->
                     <div class="mb-3 input-group">
                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
                         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required />
@@ -21,7 +24,8 @@
                         <a href="#" class="text-decoration-none">Forgot Password?</a>
                     </div>
 
-                    <div>
+                    <!-- Login Button -->
+                    <div class="form-group">
                         <button type="submit" class="btn btn-primary w-100">Login</button>
                     </div>
                 </form>
