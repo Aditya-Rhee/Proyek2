@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('admin.dashboard') }}">LaundryEn</a>
+            <a href="{{ route('user.dashboard') }}">LaundryEn</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">LE</a>

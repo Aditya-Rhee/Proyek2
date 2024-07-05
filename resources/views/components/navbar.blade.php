@@ -28,7 +28,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{url('login')}}">Log in</a></li>
-                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="{{ url('register') }}">Register</a></li>
                         {{-- <li>
                             <hr class="dropdown-divider">
                         </li>
