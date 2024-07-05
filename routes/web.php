@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,14 +29,23 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/home', 'home')->name('frontend/home');
 });
 
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
+Route::get('/login',function(){
+    return view('auth.login');
+})->name('login');
 
-Route::get('/register', function () {
-    return view('auth/register');
-});
+Route::post('/login', [AuthController::class, 'login'])->name('login-process');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout-process');
 
-Route::post('/register', 'Auth\RegisterController@register');
+
+// Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+// Route::post('/login', [LoginController::class, 'login']);
+
+// Route::get('/register', function () {
+//     return view('auth/register');
+// });
+
+
+// Route::post('/register', 'Auth\RegisterController@register');
 
 // Route::get('/home', function () {
 //     return view('home');
