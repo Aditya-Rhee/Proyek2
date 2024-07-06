@@ -41,7 +41,7 @@
                             card's content.</p>
                     </div> --}}
                 </div><br>
-                <div class="card body" style="width: 18rem; margin: auto; align-items: center;">
+                <div class="card body mb-5" style="width: 18rem; margin: auto; align-items: center;">
                     Pagi Sampai Sore Hari
                 </div>
             </div>
