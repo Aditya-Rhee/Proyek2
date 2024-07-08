@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kontak;
+use App\Models\Tentang;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,11 +13,13 @@ class PageController extends Controller
         return view('frontend.home');
     }
     public function about(){
-        return view('frontend.about');
+        $tentang = Tentang::first(); // Mengambil data pertama dari tabel `tentangs`
+        return view('frontend.about', compact('tentang'));
     }
 
     public function contact(){
-        return view('frontend.contact');
+        $kontak = Kontak::first(); // Mengambil data pertama dari tabel `kontaks`
+        return view('frontend.contact', compact('kontak'));
     }
 
     public function pesan(){

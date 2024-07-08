@@ -14,36 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $roles = ['admin', 'user'];
-
-        $users = [
-            'admin' => [
-                'name' => 'Admin',
-                'email' => 'admin@gmail.com',
-                'password' => bcrypt('password'),
-                'phone' => '08123456789',
-            ],
-            'user' => [
-                'name' => 'User',
-                'email' => 'user@gmail.com',
-                'password' => bcrypt('password'),
-                'phone' => '0812345678',
-            ],
-        ];
-
-        foreach ($roles as $role) {
-            Role::create([
-                'name' => $role,
-            ]);
-        }
-
-        foreach ($users as $user){
-            User::create([
-                'name' => $user['name'],
-                'email' => $user['email'],
-                'password' => $user['password'],
-                'phone' => $user['phone'],
-            ]);
-        }
+        $this->call(RoleSeeder::class);
+        $this->call(UsersSeeder::class);
     }
 }
